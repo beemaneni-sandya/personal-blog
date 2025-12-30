@@ -19,10 +19,11 @@ The application enables:
 - Simple, maintainable application structure
 
 ## Architecture
-- **Controller Layer** – Handles routing and request processing
-- **View Layer** – Thymeleaf templates for server-side rendering
-- **Content Layer** – File-based article storage
-- **Configuration Layer** – Application and build configuration
+The project follows a structured application design:
+- **Controller / Routing Layer** – Handles incoming requests
+- **Service / Logic Layer** – Manages business logic
+- **Data Layer** – Handles data storage and retrieval
+- **Configuration Layer** – Application configuration and setup
 
 ## Tech Stack
 - **Language:** Java 17
