@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - My Blog</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header>
+    <h1>My Blog</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/admin/login">Admin</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Articles</h2>
+    <ul id="articles-list">
+        <li th:each="article : ${articles}">
+            <a th:href="@{/article/{id}(id=${article.id})}" th:text="${article.title}"></a>
+            - <small th:text="${article.date}"></small>
+        </li>
+    </ul>
+</main>
+
+<footer>
+    <p>&copy; 2025 My Blog</p>
+</footer>
+</body>
+</html>
