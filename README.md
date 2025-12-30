@@ -55,7 +55,7 @@ The project follows a structured application design:
    http://localhost:8080
 
 
-**Future Enhancements**
+## Future Enhancements
 - Database-backed content storage
 - User authentication and authorization
 - Rich text editor support
